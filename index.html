@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#ganbeng{
+			width: 560px;
+			height: 300px;
+			position: relative;
+			overflow: hidden;
+		}
+		#ganbeng .tuul{
+			list-style: none;
+		}
+		#ganbeng .tuul li{
+			display: none;
+		}
+		#ganbeng .tuul li.cur{
+			display: block;
+		}
+		#ganbeng .anniu .leftbut{
+			position: absolute;
+			width: 45px;
+			height: 45px;
+			top: 122px;
+			left: 10px;
+			background:red;
+			cursor: pointer;
+		}
+		#ganbeng .anniu .rightbut{
+			position: absolute;
+			width: 45px;
+			height: 45px;
+			top: 122px;
+			right: 10px;
+			background:green;
+			cursor: pointer;
+		}
+
+		#ganbeng .xinxi .heitiao{
+			position: absolute;
+			bottom:0;
+			left: 0;
+			width:560px;
+			height: 40px;
+			background-color: black;
+			opacity: 0.6;
+			_filter:alpha(opacity=60);
+		}
+		#ganbeng .xinxi h3{
+			position: absolute;
+			bottom:0;
+			left: 10px;
+			color:white;
+			line-height: 40px;
+		}
+		#ganbeng .xinxi .dianul{
+			list-style: none;
+			position: absolute;
+			right: 27px;
+			bottom: 12px;
+		}
+		#ganbeng .xinxi .dianul li{
+			float: left;
+			width: 15px;
+			height: 15px;
+			margin-right: 8px;
+			background:yellow;
+			cursor: pointer;
+		}
+		#ganbeng .xinxi .dianul li.cur{
+			background:blue;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+ 	<script type="text/javascript" src="ganbeng.js"></script>
+ 	<script type="text/javascript">
+ 		window.onload = function(){
+ 			ganbeng(1000);
+ 		}
+ 	</script>
+</head>
+<body>
+	<div id="ganbeng">
+		<ul class="tuul">
+			<li class="cur"><a href="#"><img src="images/0.jpg" alt="狮子好看啊！！"/></a></li>
+			<li><a href="#"><img src="images/1.jpg" alt="外滩!!"/></a></li>
+			<li><a href="#"><img src="images/2.jpg" alt="湖水真好看！！"/></a></li>
+			<li><a href="#"><img src="images/3.jpg" alt="阿三在划船"/></a></li>
+			<li><a href="#"><img src="images/4.jpg" alt="山羊的屁股"/></a></li>
+		</ul>
+		<div class="anniu">
+			<span class="leftbut"></span>
+			<span class="rightbut"></span>
+		</div>
+		<div class="xinxi">
+			<div class="heitiao"></div>
+			<h3>狮子好看啊！！</h3>
+			<ul class="dianul">
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
