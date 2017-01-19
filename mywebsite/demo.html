@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/comman.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/time.js"></script>
+    <script type="text/javascript">
+       $(document).ready(
+           function(){
+             $(".header .nav li").eq(0).click(
+                   function(){
+                     $("html,body").animate({"scrollTop": 0}, 400);
+                   }
+                );
+            $(".header .nav li").eq(1).click(
+                   function(){
+                     $("html,body").animate({"scrollTop": $("#case .hd").offset().top}, 400);
+                   }
+                );
+            $(".header .nav li").eq(2).click(
+                   function(){
+                     $("html,body").animate({"scrollTop": $("#about").offset().top}, 400);
+                   }
+
+                );
+             $(".header .nav li").eq(3).click(
+                   function(){
+                     $("html,body").animate({"scrollTop": $("#footer").offset().top}, 400);
+                   }
+
+                );
+           }
+        );
+    </script>
+</head>
+<body>
+    <body>
+    <div id="topAndhead">
+    <div id="topWrap">
+        <div class="top">
+            <span class="f-fl" style="padding-left:10px">欢迎来到我的个人网站</span>
+            <div id="times">2015年1月5日 星期一 14:47:56</div>
+            <span class="f-fr" style="padding-right:10px">TEL：18362964526</span>
+        </div>
+    </div>
+
+    <div id="head_box">
+        <div class="header">
+            <div class="logo f-fl">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            
+            <div class="nav f-fr">
+                <span class="libg" style="left: 0px;"></span>
+                <ul>
+                    <li class="cur"><a href="#">首页</a></li>
+                    <li class=""><a href="#">案例</a></li>
+                    <li class=""><a href="#">关于</a></li>
+                    <li class=""><a href="#">联系</a></li>
+                </ul>
+            </div>
+           
+        </div>  
+    </div>  
+</div>
+    <div id="banner">
+        <ul class="pic">
+            <li class="li1" style="display: none;"></li>
+            <li class="li2" style="display: list-item;"></li>
+            <li class="li3" style="display: none;"></li>
+        </ul>
+        <ul class="circle"> 
+            <li class=""></li>
+            <li class="cur"></li>
+            <li class=""></li>
+        </ul>
+        <div class="btn">
+            <span class="leftbtn" style="display: block;"></span>
+            <span class="rightbtn" style="display: block;"></span>
+        </div>
+    </div>
+ 
+    <div id="works">
+        <div class="hd">
+            <h3 class="f-fl">
+                <img src="images/work_bg.png">
+            </h3>
+            <a href="#" class="more f-fr">
+                <img src="images/more1_bg.png">
+            </a>
+            <ul class="circle1 f-fr">
+                <li class=""></li>
+                <li class="cur"></li>
+                <li class=""></li>
+            
+            </ul>
+        </div>
+
+        <div class="lunbo">
+             <div class="banner1">
+                 <ul class="photo" style="left: -930px;">
+                    <li>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic1.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic2.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic3.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic4.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                    </li>
+                     <li>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic5.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic6.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic7.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic8.png"><div class="hk" style="top: 0px; opacity: 1; display: block;"></div></a></div>
+                    </li>
+                    <li>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic9.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic10.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic11.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                        <div style="top: 0px;"><a href="#"><img src="images/pic12.png"><div class="hk" style="top: 0px; opacity: 1;"></div></a></div>
+                    </li>
+                    
+                 </ul>
+             </div>
+             <span class="pre"></span>
+             <span class="next"></span>
+        </div>
+    </div>    
+   
+    <div id="case">
+        <div class="hd">
+            <h3 class="f-fl"><strong>案例展示</strong>Case demonstration</h3>
+            <a href="#" class="more f-fr"></a>
+        </div>
+        <div class="cl"></div>
+        <div class="bd">
+            <ul>
+                <li><a href="1/index.html" target="_blank"><img src="images/pic01.png"></a><p style="bottom: -36px;"><a href="1/index.html" target="_blank">居澳集团官网</a></p></li>
+                <li><a href="2/index.html" target="_blank"><img src="images/pic02.png"></a><p style="bottom: -36px;"><a href="2/index.html" target="_blank">海外旅游手机站</a></p></li>
+                <li><a href="3/index.html" target="_blank"><img src="images/pic03.png"></a><p style="bottom: -36px;"><a href="3/index.html" target="_blank">伊安视科技</a></p></li>
+                <li><a href="4/index.html" target="_blank"><img src="images/pic04.png"></a><p style="bottom: -36px;"><a href="4/index.html" target="_blank">泓蕴官网首页</a></p></li>
+                <li><a href="5/index.html" target="_blank"><img src="images/pic05.png"></a><p style="bottom: -36px;"><a href="5/index.html" target="_blank">酒吧主页手机端</a></p></li>
+                <li><a href="6/index.html" target="_blank"><img src="images/pic06.png"></a><p style="bottom: -36px;"><a href="6/index.html" target="_blank">太弘威势企业站</a></p></li>
+                <li><a href="7/index.html" target="_blank"><img src="images/pic07.png"></a><p style="bottom: -36px;"><a href="7/index.html" target="_blank">牙乐美商城</a></p></li>
+                <li><a href="8/index.html" target="_blank"><img src="images/pic08.png"></a><p style="bottom: -36px;"><a href="8/index.html" target="_blank">中国酒吧网</a></p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="about">
+        <h3></h3>
+        <ul>
+            <li>
+                <img src="images/ps.png">
+                <p>主要用来页面设计，根据网站整体设计要求，完成创意、设计网站的整体形象，规划网站的整体框架，包括结构布局、色彩等搭配。</p>
+            </li>
+            <li>
+                <img src="images/sb.png">
+                <p>主要用来各种网页的排版制作，
+如DIV+CSS、HTML+CSS3、
+等网页静态效果的实现，能够做
+到代码规范，完美实现兼容主流
+浏览器。
+</p>
+            </li>
+            <li>
+                <img src="images/fw.png">
+                <p>主要用来绘制网页的矢量图标，
+以及用来创意设计图片的制作，
+以优美的线条把它的意思表达出
+来。</p>
+            </li>
+         <li>
+                <img src="images/js.png">
+                <p>能够使用JAVASCRIPT/JQUERY
+手写网页多种交互特效，实现页
+面动态效果，使用户得到更好的
+体验，让网页变的有活力。</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li>qq : 2419408677</li>
+            <li>电话 : 18362964526</li>
+            <li class="nobd">邮箱:2419408677@.com</li>
+        </ul>
+    </div>
+
+</body>
+</body>
+</html>
